@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>سایت من</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>سلام! من طراح وب هستم</h1>
+    <nav>
+      <a href="index.html">خانه</a> |
+      <a href="about.html">درباره من</a> |
+      <a href="contact.html">تماس با من</a>
+    </nav>
+  </header>
+
+  <main>
+    <p>به وب‌سایت شخصی من خوش اومدی!</p>
+  </main>
+
+  <footer>
+    <p>© ۲۰۲۵ همه حقوق محفوظ است</p>
+  </footer>
+</body>
+</html>

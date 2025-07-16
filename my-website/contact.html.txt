@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>تماس با من</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>تماس با من</h1>
+    <nav>
+      <a href="index.html">خانه</a> |
+      <a href="about.html">درباره من</a> |
+      <a href="contact.html">تماس</a>
+    </nav>
+  </header>
+
+  <main>
+    <form id="contactForm">
+      <label for="name">نام:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">ایمیل:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="message">پیام:</label><br>
+      <textarea id="message" name="message" required></textarea><br><br>
+
+      <button type="submit">ارسال</button>
+    </form>
+
+    <p id="responseMessage" style="color: green; display: none;">پیام شما با موفقیت ارسال شد!</p>
+  </main>
+
+  <footer>
+    <p>© ۲۰۲۵ - همه حقوق محفوظ است</p>
+  </footer>
+
+  <script>
+    // جاوااسکریپت برای فرم
+    const form = document.getElementById("contactForm");
+    const response = document.getElementById("responseMessage");
+
+    form.addEventListener("submit", function(event) {
+      event.preventDefault(); // نذاره صفحه رفرش بشه
+      response.style.display = "block"; // پیام "ارسال شد" رو نشون بده
+      form.reset(); // فرم رو خالی کنه
+    });
+  </script>
+</body>
+</html>
